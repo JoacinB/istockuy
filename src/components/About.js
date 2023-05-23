@@ -34,7 +34,7 @@ export default function About() {
     >
       <Box className="mx-auto text-center">
         <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
-          About Me
+          Productos
         </Text>
         <Flex className="justify-between mx-auto">
           <Box

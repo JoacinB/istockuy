@@ -9,26 +9,28 @@ export default function Home() {
     dark: "shadow-[5px_8px_30px_-15px_rgba(255,255,255,0.3)]",
   };
   const [text] = useTypewriter({
-    words: ["Full-Stack Developer", "Web Developer", "Mobile Developer"],
+    words: ["AirPods Pro (2da generación)"],
     loop: 0,
     deleteSpeed: 80,
   });
   const textColor = colorMode === "dark" ? "white" : "gray.800";
   return (
     <Box
-      backgroundImage="url('iphone14_hero.jpg')"
-      backgroundPosition="center"
-      backgroundRepeat="no-repeat"
       color={textColor}
       px={8}
       py={20}
-      h={["auto", "auto", "auto", "100vh"]}
     >
-      <Box mx="auto" className=" text-center">
-        <Heading as="h2" fontSize="5xl" mb={4} className=" text-slate-100">
-          iPhone 14 Pro
-        </Heading>
+      <Heading as="h2" fontSize="6xl" bgGradient="linear(to-r, #6927d9, #d446ab)" bgClip="text" pb={4}>
+          {text}
+          <Cursor></Cursor>
+      </Heading>
+      <Box       
+      h={["auto", "auto", "auto", "100vh"]}
+      backgroundImage="url('airpodspro2.png')"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat">
       </Box>
+
     </Box>
   );
 }

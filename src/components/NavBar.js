@@ -6,7 +6,7 @@ function NavBar() {
   const { colorMode } = useColorMode();
   return (
     <Box
-      className="h-14 flex w-full fixed top-0 right-0 bg-black justify-center items-center"
+      className="h-14 flex w-full fixed top-0 right-0 bg-transparent justify-center items-center"
     >
       <Flex className="flex-col h-full relative justify-center items-center">
         {/* <Link href="#home-section">
