@@ -49,8 +49,7 @@ export default function Catalogo() {
         
         <Flex className="justify-center mx-auto">
           <Box
-            w="75%" 
-            className={`text-left ${backgroundColor} p-3 mr-3 rounded-xl border-2 border-${borderColor}`}
+            className={`text-left ${backgroundColor} p-3 mr-3 sm:w-full lg:w-3/4 rounded-xl border-2 border-${borderColor}`}
           >
             <Heading size='md' className="text-center mb-4">AirPods</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
@@ -174,8 +173,7 @@ export default function Catalogo() {
 
         <Flex className="justify-center mx-auto">
           <Box
-            w="75%" 
-            className={`text-left ${backgroundColor} p-3 mr-3 rounded-xl border-2 border-${borderColor}`}
+            className={`text-left ${backgroundColor} p-3 mr-3 sm:w-full lg:w-3/4 rounded-xl border-2 border-${borderColor}`}
           >
             <Heading size='md' className="text-center mb-4">Accesorios</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
