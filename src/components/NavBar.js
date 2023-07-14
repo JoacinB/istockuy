@@ -1,6 +1,8 @@
 import { Box, Flex, IconButton, Tooltip, Icon } from "@chakra-ui/react";
 import ColorModeSwitcher from "./ColorModeSwitcher";
+import MenuBoton from "./MenuBoton";
 import { useColorMode } from "@chakra-ui/react";
+import Carrito from "./Carrito";
 
 function NavBar() {
   const { colorMode } = useColorMode();
@@ -28,16 +30,16 @@ function NavBar() {
             />
           </Tooltip>
         </Link>
-        <Link href="#about-section">
+        <Link href="#catalogo-section">
           <Tooltip
-            label="About"
-            aria-label="About"
+            label="Catalogo"
+            aria-label="Catalogo"
             placement="left"
             bgGradient="linear(to-l, #6927d9, #d446ab)"
             textColor={"white"}
           >
             <IconButton
-              aria-label="About"
+              aria-label="Catalogo"
               bg="transparent"
               color={colorMode}
               _hover={{ bg: "transparent" }}
@@ -87,6 +89,8 @@ function NavBar() {
         </Link> */}
         <ColorModeSwitcher />
       </Flex>
+      <MenuBoton />
+      <Carrito/>
     </Box>
   );
 }

@@ -19,7 +19,7 @@ import {
 import { differenceInYears } from "date-fns";
 import { BsFillCartPlusFill } from "react-icons/bs";
 
-export default function About() {
+export default function Catalogo() {
   const { colorMode } = useColorMode();
   const textColor = colorMode === "dark" ? "white" : "gray.800";
   const shadowColor = {
@@ -45,13 +45,14 @@ export default function About() {
       <Box className="mx-auto text-center">
         <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
           Catálogo
-          <Divider mt={10}/></Text>
+          </Text>
         
         <Flex className="justify-center mx-auto">
           <Box
             w="75%" 
             className={`text-left ${backgroundColor} p-3 mr-3 rounded-xl border-2 border-${borderColor}`}
           >
+            <Heading size='md' className="text-center mb-4">AirPods</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
             <Card maxW='sm' m={2}>
               <CardBody>
@@ -67,7 +68,7 @@ export default function About() {
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
                   <Text color='blue.600' fontSize='2xl'>
-                    U$S 140
+                    U$S 139.99
                   </Text>
                 </Stack>
               </CardBody>
@@ -95,7 +96,7 @@ export default function About() {
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                   </Box>
                   <Text color='blue.600' fontSize='2xl'>
-                    U$S 120
+                    U$S 119.99
                   </Text>
                 </Stack>
               </CardBody>
@@ -123,7 +124,76 @@ export default function About() {
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
                   <Text color='blue.600' fontSize='2xl'>
-                    U$S 250
+                    U$S 449.99
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='solid' colorScheme='blue'>
+                    Comprar
+                  </Button>
+                  <IconButton aria-label="Agregar al carrito" icon={<Icon as={BsFillCartPlusFill} boxSize={6}/>} />
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            {/* <Card maxW='sm' m={2}>
+              <CardBody>
+                <Image
+                  src='/airpodspro2productos.png'
+                  alt='AirPods Pro 2'
+                  borderRadius='lg'
+                />
+                <Divider />
+                <Stack mt='6' spacing='3' >
+                  <Heading size='md'>AirPods Pro 2 </Heading>
+                  <Box>
+                    <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
+                  </Box>
+                  <Text color='blue.600' fontSize='2xl'>
+                    U$S 139.99
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='solid' colorScheme='blue'>
+                    Comprar
+                  </Button>
+                  <IconButton aria-label="Agregar al carrito" icon={<Icon as={BsFillCartPlusFill} boxSize={6}/>} />
+                </ButtonGroup>
+              </CardFooter>
+            </Card> */}
+            </Flex>
+          </Box>
+        </Flex>
+
+        <Divider my={10}/>
+
+        <Flex className="justify-center mx-auto">
+          <Box
+            w="75%" 
+            className={`text-left ${backgroundColor} p-3 mr-3 rounded-xl border-2 border-${borderColor}`}
+          >
+            <Heading size='md' className="text-center mb-4">Accesorios</Heading>
+          <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
+            <Card maxW='sm' m={2}>
+              <CardBody>
+                <Image
+                  src='/magsafecharger.png'
+                  alt='MagSafe Charger'
+                  borderRadius='lg'
+                />
+                <Divider />
+                <Stack mt='6' spacing='3' >
+                  <Heading size='md'>Cargador MagSafe</Heading>
+                  <Box>
+                    <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
+                  </Box>
+                  <Text color='blue.600' fontSize='2xl'>
+                    U$S 39.99
                   </Text>
                 </Stack>
               </CardBody>
@@ -140,18 +210,74 @@ export default function About() {
             <Card maxW='sm' m={2}>
               <CardBody>
                 <Image
-                  src='/airpodspro2productos.png'
-                  alt='AirPods Pro 2'
+                  src='/bateriamagsafe.png'
+                  alt='Batería MagSafe'
                   borderRadius='lg'
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>AirPods Pro 2 </Heading>
+                  <Heading size='md'>Batería MagSafe</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
                   <Text color='blue.600' fontSize='2xl'>
-                    U$S 140
+                    U$S 56.99
+                  </Text>
+                </Stack>
+              </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='solid' colorScheme='blue'>
+                    Comprar
+                  </Button>
+                  <IconButton aria-label="Agregar al carrito" icon={<Icon as={BsFillCartPlusFill} boxSize={6}/>} />
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW='sm' m={2}>
+              <CardBody>
+                  <Image
+                    src='/cargadorusbc.png'
+                    alt='Cargador 20W USB-C'
+                    borderRadius='lg'
+                  />
+                  <Divider />
+                  <Stack mt='6' spacing='3' >
+                    <Heading size='md'>Cargador 20W USB-C</Heading>
+                    <Box>
+                      <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
+                    </Box>
+                    <Text color='blue.600' fontSize='2xl'>
+                      U$S 19.99
+                    </Text>
+                  </Stack>
+                </CardBody>
+              <Divider />
+              <CardFooter>
+                <ButtonGroup spacing='2'>
+                  <Button variant='solid' colorScheme='blue'>
+                    Comprar
+                  </Button>
+                  <IconButton aria-label="Agregar al carrito" icon={<Icon as={BsFillCartPlusFill} boxSize={6}/>} />
+                </ButtonGroup>
+              </CardFooter>
+            </Card>
+            <Card maxW='sm' m={2}>
+              <CardBody>
+                <Image
+                  src='/cable.png'
+                  alt='Cable 1m USB-C a Lightning'
+                  borderRadius='lg'
+                />
+                <Divider />
+                <Stack mt='6' spacing='3' >
+                  <Heading size='md'>Cable 1m USB-C a Lightning</Heading>
+                  <Box>
+                    <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
+                  </Box>
+                  <Text color='blue.600' fontSize='2xl'>
+                    U$S 8.99
                   </Text>
                 </Stack>
               </CardBody>

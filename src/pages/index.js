@@ -1,4 +1,4 @@
-import About from "@/components/About";
+import Catalogo from "@/components/Catalogo";
 import NavBar from "../components/NavBar";
 import { Box } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
@@ -24,15 +24,15 @@ export default function Index() {
       <Box id="home-section">
         <Home />
       </Box>
-      <Box id="about-section">
-        <About />
+      <Box id="catalogo-section">
+        <Catalogo />
       </Box>
-      <Box id="portfolio-section">
+      {/* <Box id="portfolio-section">
         <Portfolio />
       </Box>
       <Box id="contact-section">
         <Contact />
-      </Box>
+      </Box> */}
       <NavBar />
       <CustomScrollbar />
     </Box>

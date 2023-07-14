@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Divider, Flex } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -9,7 +9,7 @@ export default function Home() {
     dark: "shadow-[5px_8px_30px_-15px_rgba(255,255,255,0.3)]",
   };
   const [text] = useTypewriter({
-    words: ["AirPods Pro (2da generación)"],
+    words: ["AirPods Pro (segunda generación)"],
     loop: 0,
     deleteSpeed: 80,
   });
@@ -27,10 +27,10 @@ export default function Home() {
       <Box       
       h={["auto", "auto", "auto", "100vh"]}
       backgroundImage="url('airpodspro2.png')"
-      backgroundPosition="center"
+      backgroundPosition="bottom"
       backgroundRepeat="no-repeat">
       </Box>
-
+      <Divider/>
     </Box>
   );
 }
