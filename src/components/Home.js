@@ -18,9 +18,9 @@ export default function Home() {
     <Box
       color={textColor}
       px={8}
-      py={20}
+      className="invisible py-10 md:py-20 md:visible "
     >
-      <Heading as="h2" fontSize="6xl" bgGradient="linear(to-r, #6927d9, #d446ab)" bgClip="text" pb={4}>
+      <Heading as="h2" fontSize="6xl" bgGradient="linear(to-r, #6927d9, #d446ab)" bgClip="text" pb={4} className="hidden lg:block">
           {text}
           <Cursor></Cursor>
       </Heading>
@@ -30,7 +30,7 @@ export default function Home() {
       backgroundPosition="bottom"
       backgroundRepeat="no-repeat">
       </Box>
-      <Divider/>
+      <Divider className="hidden lg:block"/>
     </Box>
   );
 }
