@@ -8,8 +8,8 @@ function NavBar() {
   const { colorMode } = useColorMode();
   return (
     <Box
-      className="h-14 flex w-full fixed top-0 right-0 bg-transparent backdrop-blur justify-center items-center"
-      boxShadow={colorMode === "dark" ? '5px 5px 30px -15px rgba(255,255,255,0.5)' : '5px 8px 30px -15px rgba(0,0,0,1)'}>
+      className="h-14 flex w-full fixed top-0 bg-transparent backdrop-blur justify-center items-center"
+      boxShadow={colorMode === "dark" ? '5px 5px 30px -15px rgba(255,255,255,0.2)' : '5px 8px 30px -15px rgba(0,0,0,0.2)'}>
       <Flex className="flex-col h-full relative justify-center items-center">
         {/* <Link href="#home-section">
           <Tooltip

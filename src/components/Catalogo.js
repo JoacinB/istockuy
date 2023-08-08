@@ -49,7 +49,7 @@ export default function Catalogo() {
         
         <Flex className="justify-center mx-auto">
           <Box
-            className={`text-left ${backgroundColor} p-3 mr-3 sm:w-full lg:w-3/4 rounded-xl border-2 border-${borderColor}`}
+            className={`text-left p-3 mr-3 sm:w-full lg:w-3/4`}
           >
             <Heading size='md' className="text-center mb-4">AirPods</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
@@ -61,13 +61,13 @@ export default function Catalogo() {
                   borderRadius='lg'
                 />
                 <Divider />
-                <Stack mt='6' spacing='3' >
+                <Stack mt='6' spacing='3'>
                   <Heading size='md'>AirPods Pro 2 </Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
-                    U$S 139.99
+                  <Text color={textColor} fontSize='2xl'>
+                    $ 4500,00
                   </Text>
                 </Stack>
               </CardBody>
@@ -94,8 +94,8 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
-                    U$S 119.99
+                  <Text color={textColor} fontSize='2xl'>
+                    $ 3760,00
                   </Text>
                 </Stack>
               </CardBody>
@@ -122,7 +122,7 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl'>
                     U$S 449.99
                   </Text>
                 </Stack>
@@ -150,7 +150,7 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl'>
                     U$S 139.99
                   </Text>
                 </Stack>
@@ -173,7 +173,7 @@ export default function Catalogo() {
 
         <Flex className="justify-center mx-auto">
           <Box
-            className={`text-left ${backgroundColor} p-3 mr-3 sm:w-full lg:w-3/4 rounded-xl border-2 border-${borderColor}`}
+            className={`text-left p-3 mr-3 sm:w-full lg:w-3/4`}
           >
             <Heading size='md' className="text-center mb-4">Accesorios</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
@@ -190,8 +190,8 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
-                    U$S 39.99
+                  <Text color={textColor} fontSize='2xl'>
+                    $ 1500,00
                   </Text>
                 </Stack>
               </CardBody>
@@ -218,8 +218,8 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
-                    U$S 56.99
+                  <Text color={textColor} fontSize='2xl'>
+                    $ 2190,00
                   </Text>
                 </Stack>
               </CardBody>
@@ -246,8 +246,8 @@ export default function Catalogo() {
                     <Box>
                       <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                     </Box>
-                    <Text color='blue.600' fontSize='2xl'>
-                      U$S 19.99
+                    <Text color={textColor} fontSize='2xl'>
+                      $ 750,00
                     </Text>
                   </Stack>
                 </CardBody>
@@ -274,8 +274,8 @@ export default function Catalogo() {
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                   </Box>
-                  <Text color='blue.600' fontSize='2xl'>
-                    U$S 8.99
+                  <Text color={textColor} fontSize='2xl'>
+                    $ 360,00
                   </Text>
                 </Stack>
               </CardBody>

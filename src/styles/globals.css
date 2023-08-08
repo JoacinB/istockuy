@@ -109,3 +109,32 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Fonts */
+@font-face {
+  font-family: 'Greycliffcf-Bold';
+  src: url('/fonts/GreycliffCF-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Greycliffcf-ExtraBold';
+  src: url('/fonts/Greycliffcf-extrabold.otf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Greycliffcf-Medium';
+  src: url('/fonts/Greycliffcf-medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Greycliffcf-Regular';
+  src: url('/fonts/Greycliffcf-regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+.custom-cursor {
+  font-family: "monospace";
+}

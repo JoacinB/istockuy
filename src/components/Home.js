@@ -9,9 +9,9 @@ export default function Home() {
     dark: "shadow-[5px_8px_30px_-15px_rgba(255,255,255,0.3)]",
   };
   const [text] = useTypewriter({
-    words: ["AirPods Pro (segunda generación)"],
+    words: ["Montevideo", "Canelones", "Maldonado", "Rocha", "Treinta y Tres", "Cerro Largo", "Rivera", "Artigas", "Salto", "Paysandu", "Rio Negro", "Soriano", "Colonia", "San Jose", "Florida", "Lavalleja", "Durazno", "Tacuarembo", "Flores"],
     loop: 0,
-    deleteSpeed: 80,
+    deleteSpeed: 40,
   });
   const textColor = colorMode === "dark" ? "white" : "gray.800";
   return (
@@ -19,18 +19,55 @@ export default function Home() {
       color={textColor}
       px={8}
       className="invisible py-10 md:py-20 md:visible "
+      position="relative"
+      overflow="hidden"
+      h={["auto", "auto", "auto", "100vh"]}
     >
-      <Heading as="h2" fontSize="6xl" bgGradient="linear(to-r, #6927d9, #d446ab)" bgClip="text" pb={4} className="hidden lg:block">
+      <video
+        src="home-video.mp4"
+        autoPlay
+        loop
+        muted
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "50%",
+          height: "100%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: "-1",
+        }}
+      ></video>
+      {/* <Heading as="h2" fontSize="6xl" bgGradient="linear(to-r, #6927d9, #d446ab)" bgClip="text" pb={4} className="hidden lg:block text-center">
           {text}
           <Cursor></Cursor>
-      </Heading>
+      </Heading> */}
+      <Flex className="justify-center items-center align-middle h-full" flexDirection="column">
+        <Heading fontFamily="Greycliffcf-ExtraBold" size='4xl' fontSize={{ base: '24px', md: '40px', lg: '112px' }} bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
+          iStock UY
+        </Heading>
+        <Heading as="h2" fontSize="3xl" className="text-center" fontFamily="Greycliffcf-Bold">
+          {text}
+          <Cursor></Cursor>
+        </Heading>
+      </Flex>
       <Box       
       h={["auto", "auto", "auto", "100vh"]}
-      backgroundImage="url('airpodspro2.png')"
+      backgroundImage="url('home-video.mp4')"
       backgroundPosition="bottom"
       backgroundRepeat="no-repeat">
       </Box>
       <Divider className="hidden lg:block"/>
+      <Box
+        position="absolute"
+        bottom="0"
+        left="0"
+        right="0"
+        height="15%"
+        backgroundImage="linear-gradient(to top, rgba(200, 200, 200, 0.1), rgba(255, 255, 255, 0))"
+        zIndex="0"
+      />
     </Box>
   );
 }
