@@ -119,19 +119,19 @@ a {
 
 @font-face {
   font-family: 'Greycliffcf-ExtraBold';
-  src: url('/fonts/Greycliffcf-extrabold.otf') format('opentype');
+  src: url('/fonts/GreycliffCF-ExtraBold.otf') format('opentype');
   font-weight: 800;
 }
 
 @font-face {
   font-family: 'Greycliffcf-Medium';
-  src: url('/fonts/Greycliffcf-medium.otf') format('opentype');
+  src: url('/fonts/GreycliffCF-Medium.otf') format('opentype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Greycliffcf-Regular';
-  src: url('/fonts/Greycliffcf-regular.otf') format('opentype');
+  src: url('/fonts/GreycliffCF-Regular.otf') format('opentype');
   font-weight: normal;
 }
 

@@ -53,10 +53,7 @@ export default function Home() {
         </Heading>
       </Flex>
       <Box       
-      h={["auto", "auto", "auto", "100vh"]}
-      backgroundImage="url('home-video.mp4')"
-      backgroundPosition="bottom"
-      backgroundRepeat="no-repeat">
+      h={["auto", "auto", "auto", "100vh"]}>
       </Box>
       <Divider className="hidden lg:block"/>
       <Box
