@@ -9,7 +9,7 @@ export default function Home() {
     dark: "shadow-[5px_8px_30px_-15px_rgba(255,255,255,0.3)]",
   };
   const [text] = useTypewriter({
-    words: ["Montevideo", "Canelones", "Maldonado", "Rocha", "Treinta y Tres", "Cerro Largo", "Rivera", "Artigas", "Salto", "Paysandu", "Rio Negro", "Soriano", "Colonia", "San Jose", "Florida", "Lavalleja", "Durazno", "Tacuarembo", "Flores"],
+    words: ["Montevideo", "Canelones", "Maldonado", "Rocha", "Treinta y Tres", "Cerro Largo", "Rivera", "Artigas", "Salto", "Paysandú", "Río Negro", "Soriano", "Colonia", "San José", "Florida", "Lavalleja", "Durazno", "Tacuarembó", "Flores"],
     loop: 0,
     deleteSpeed: 40,
   });
@@ -47,7 +47,7 @@ export default function Home() {
         <Heading fontFamily="Greycliffcf-ExtraBold" size='4xl' fontSize={{ base: '24px', md: '40px', lg: '112px' }} bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
           iStock UY
         </Heading>
-        <Heading as="h2" fontSize="3xl" className="text-center" fontFamily="Greycliffcf-Bold">
+        <Heading as="h2" fontSize="3xl" className="text-center text-white">
           {text}
           <Cursor></Cursor>
         </Heading>

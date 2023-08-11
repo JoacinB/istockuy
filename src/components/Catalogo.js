@@ -43,7 +43,7 @@ export default function Catalogo() {
       h={["auto", "auto", "auto", "100-full"]}
     >
       <Box className="mx-auto text-center">
-        <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl">
+        <Text className="mb-20 text-3xl font-bold xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl" fontFamily="Greycliffcf-Bold">
           Catálogo
           </Text>
         
@@ -51,7 +51,7 @@ export default function Catalogo() {
           <Box
             className={`text-left p-3 mr-3 sm:w-full lg:w-3/4`}
           >
-            <Heading size='md' className="text-center mb-4">AirPods</Heading>
+            <Heading size='md' className="text-center mb-4" fontFamily="Greycliffcf-Bold">AirPods</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
             <Card maxW='sm' m={2}>
               <CardBody>
@@ -62,11 +62,11 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3'>
-                  <Heading size='md'>AirPods Pro 2 </Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">AirPods Pro 2 </Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                     $ 4500,00
                   </Text>
                 </Stack>
@@ -90,11 +90,11 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>AirPods Pro</Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">AirPods Pro</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                     $ 3760,00
                   </Text>
                 </Stack>
@@ -118,12 +118,12 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>AirPods Max</Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">AirPods Max</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
-                    U$S 449.99
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
+                    $ 17240,00
                   </Text>
                 </Stack>
               </CardBody>
@@ -175,7 +175,7 @@ export default function Catalogo() {
           <Box
             className={`text-left p-3 mr-3 sm:w-full lg:w-3/4`}
           >
-            <Heading size='md' className="text-center mb-4">Accesorios</Heading>
+            <Heading size='md' className="text-center mb-4" fontFamily="Greycliffcf-Bold">Accesorios</Heading>
           <Flex className="justify-center mx-auto" direction={["column", "column", "row"]}>
             <Card maxW='sm' m={2}>
               <CardBody>
@@ -186,11 +186,11 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>Cargador MagSafe</Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">Cargador MagSafe</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                     $ 1500,00
                   </Text>
                 </Stack>
@@ -214,11 +214,11 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>Batería MagSafe</Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">Batería MagSafe</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                     $ 2190,00
                   </Text>
                 </Stack>
@@ -242,11 +242,11 @@ export default function Catalogo() {
                   />
                   <Divider />
                   <Stack mt='6' spacing='3' >
-                    <Heading size='md'>Cargador 20W USB-C</Heading>
+                    <Heading size='md' fontFamily="Greycliffcf-ExtraBold">Cargador 20W USB-C</Heading>
                     <Box>
                       <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                     </Box>
-                    <Text color={textColor} fontSize='2xl'>
+                    <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                       $ 750,00
                     </Text>
                   </Stack>
@@ -270,11 +270,11 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3' >
-                  <Heading size='md'>Cable 1m USB-C a Lightning</Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">Cable 1m USB-C a Lightning</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge>
                   </Box>
-                  <Text color={textColor} fontSize='2xl'>
+                  <Text color={textColor} fontSize='2xl' fontFamily="Greycliffcf-Regular">
                     $ 360,00
                   </Text>
                 </Stack>
