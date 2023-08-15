@@ -1,6 +1,7 @@
 import { useColorMode, IconButton, MenuButton, Menu, MenuList, MenuItem } from "@chakra-ui/react";
 import { HamburgerIcon, CalendarIcon } from "@chakra-ui/icons";
 import { BsShieldCheck } from "react-icons/bs";
+import Link from "next/link";
 
 function MenuBoton() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -19,9 +20,11 @@ function MenuBoton() {
           _focus={{ outline: "none" }}
         />
         <MenuList>
-          <MenuItem icon={<BsShieldCheck size={16}/>}>
-            Garantía
-          </MenuItem>
+          <Link href="/garantia" passHref>
+            <MenuItem icon={<BsShieldCheck size={16}/>}>
+              Garantía
+            </MenuItem>
+          </Link>
         </MenuList>
     </Menu>
     // <IconButton
