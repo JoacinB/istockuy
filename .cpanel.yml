@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/istotbfw/istockuy.com
+    - export REPOPATH=/home/istotbfw/repositories/istockuy-web
+    - /bin/cp -R $REPOPATH/public/* $DEPLOYPATH/public/
+    - /bin/cp -R $REPOPATH/src/* $DEPLOYPATH/src/
