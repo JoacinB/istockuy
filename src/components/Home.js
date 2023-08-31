@@ -44,10 +44,10 @@ export default function Home() {
           <Cursor></Cursor>
       </Heading> */}
       <Flex className="justify-center items-center align-middle h-full" flexDirection="column">
-        <Heading fontFamily="Greycliffcf-ExtraBold" as="h1" size="xl" bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
+        <Heading fontFamily="Greycliffcf-ExtraBold" size='4xl' fontSize={{ base: '24px', md: '40px', lg: '112px' }} bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
           iStock UY
         </Heading>
-        <Heading as="h2" fontSize="3xl" className="text-center text-white">
+        <Heading as="h2" fontSize={{ base: '12px', md: '20px', lg: '40px' }} className="text-center text-white">
           {text}
           <Cursor></Cursor>
         </Heading>
