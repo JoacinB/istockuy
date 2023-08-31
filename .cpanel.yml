@@ -1,7 +1,10 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/istotbfw/public_html/
-    - export REPOPATH=/home/istotbfw/repositories/istockuy-web
-    - /bin/cp -R $REPOPATH/public/* $DEPLOYPATH/public/
-    - /bin/cp -R $REPOPATH/src/* $DEPLOYPATH/src/
+    - export NODE_ENV=production
+    - npm install
+    - npm run build
+    - /bin/cp -r .next /home/istotbfw/public_html/
+    - /bin/cp -r src/* /home/istotbfw/public_html/
+    - /bin/cp -r public/* /home/istotbfw/public_html/
+    - npm start &
