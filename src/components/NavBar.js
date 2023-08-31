@@ -90,7 +90,7 @@ function NavBar() {
         <ColorModeSwitcher />
       </Flex>
       <MenuBoton />
-      <Carrito/>
+      {/* <Carrito/> */}
     </Box>
   );
 }

@@ -24,9 +24,9 @@ export default function Index() {
       <Box id="home-section">
         <Home />
       </Box>
-      <Box id="catalogo-section">
+      {/* <Box id="catalogo-section">
         <Catalogo />
-      </Box>
+      </Box> */}
       {/* <Box id="portfolio-section">
         <Portfolio />
       </Box>
