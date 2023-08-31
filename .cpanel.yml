@@ -4,7 +4,7 @@ deployment:
     - export NODE_ENV=production
     - npm install
     - npm run build
-    - /bin/cp -r .next /home/istotbfw/public_html/
-    - /bin/cp -r src/* /home/istotbfw/public_html/
-    - /bin/cp -r public/* /home/istotbfw/public_html/
+    - /bin/cp -r /home/istotbfw/.next /home/istotbfw/public_html/
+    - /bin/cp -r /home/istotbfw/src/* /home/istotbfw/public_html/
+    - /bin/cp -r /home/istotbfw/public/* /home/istotbfw/public_html/
     - npm start &
