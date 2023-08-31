@@ -5,7 +5,7 @@ deployment:
     - export REPOPATH=/home/istotbfw/repositories/istockuy-web
     - /bin/cp -R $REPOPATH/public/* $DEPLOYPATH/
     - /bin/cp -R $REPOPATH/src/* $DEPLOYPATH/
-    - export NODE_ENV=production
+    - export cross-env NODE_ENV=production node server.js
     - npm install
     - npm run build
-    - npm start &
+    - npm start
