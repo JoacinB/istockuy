@@ -62,7 +62,7 @@ export default function Catalogo() {
                 />
                 <Divider />
                 <Stack mt='6' spacing='3'>
-                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">AirPods Pro 2 </Heading>
+                  <Heading size='md' fontFamily="Greycliffcf-ExtraBold">AirPods Pro 2</Heading>
                   <Box>
                     <Badge variant="outline" colorScheme='green'>Envío gratis</Badge> <Badge variant="outline" colorScheme='purple'>Nuevo</Badge>
                   </Box>
