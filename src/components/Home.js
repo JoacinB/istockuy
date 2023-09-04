@@ -23,7 +23,7 @@ export default function Home() {
       <Box
         color={textColor}
         px={8}
-        className="py-[100%]"
+        className="py-[100%] lg:py-10"
         position="relative"
         overflow="hidden"
         h={["auto", "auto", "auto", "100vh"]}
@@ -49,10 +49,10 @@ export default function Home() {
             <Cursor></Cursor>
         </Heading> */}
         <Flex className="justify-center items-center align-middle h-full" flexDirection="column">
-          <Heading fontFamily="Greycliffcf-ExtraBold" size='4xl' fontSize={{ base: '48px', md: '48px', lg: '112px' }} bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
+          <Heading fontFamily="Greycliffcf-ExtraBold" size='4xl' fontSize={{ base: '48px', md: '96px', lg: '112px' }} bgImage="linear-gradient(7deg, #da35ab 12.72%, #632687 58.73%, #6f359d 101.06%)" backgroundClip="text" textColor="transparent">
             iStock UY
           </Heading>
-          <Heading as="h2" fontSize={{ base: '20px', md: '20px', lg: '40px' }} className="text-center text-white">
+          <Heading as="h2" fontSize={{ base: '20px', md: '32px', lg: '40px' }} className="text-center text-white">
             {text}
             <Cursor></Cursor>
           </Heading>
