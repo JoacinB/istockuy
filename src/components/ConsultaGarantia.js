@@ -14,6 +14,7 @@ import {
   import { CheckIcon, CloseIcon, WarningTwoIcon } from '@chakra-ui/icons';
   import { useEffect, useState } from "react";
   import garantiaService from "@/services/garantiaService";
+  import Head from 'next/head';
   
   export default function ConsultaGarantia() {
     const { colorMode } = useColorMode();
@@ -62,94 +63,99 @@ import {
     }
   
     return (
-      <Box
-        // style={{
-        //   background: `url('/fondoabout.png') ${colorMode === "dark" ? "black" : "white"} no-repeat center`,
-        // }}
-        color={textColor}
-        px={8}
-        py={5}
-        h={["auto", "auto", "auto", "100-full"]}
-      >
-        <Box className="mx-auto text-center mt-14">
-            <Heading as="h1" size="xl">
-                Consulta de Garantía
-            </Heading>
-            <Box>
-                <Text fontSize="lg" className="mt-10">
-                    Ingrese su número de garantía para consultar el estado de la misma.
-                </Text>
-            </Box>
-            <Box className="mt-10">
-              <HStack className="justify-center">
-                <PinInput type='alphanumeric' onChange={(value) => setPinValue(value)}>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <Text fontSize="lg">-</Text>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <Text fontSize="lg">-</Text>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                  <PinInputField textTransform="uppercase"/>
-                </PinInput>
-              </HStack>
-            </Box>
-            <Box className="mt-10">
-              {loading && <Spinner />}
-              {!loading && pinValue.length === 11 && (
-                <Box
-                bg={error ? (colorMode === "dark" ? "#8b0000" : "#8b0000") 
-                : warrantyInfo?.es_valida ? (colorMode === "dark" ? "#00722a" : "#00722a")
-                : (colorMode === "dark" ? "#DD6B20" : "#DD6B20")}
-                  boxShadow="md"
-                  borderRadius="lg"
-                  p={4}
-                  width="100%"
-                  maxW="400px"
-                  mx="auto"
-                  textColor="white"
-                >
-                  <VStack spacing={3} align="start">
-                    {error ? (
-                        <HStack spacing={2}>
-                          <Icon as={CloseIcon} color="white" w={4} h={4} />
-                          <Text fontSize="md">No hay registros para ese número de garantía.</Text>
-                        </HStack>
-                    ) : (
-                      <>
-                        <HStack spacing={2}>
-                          {warrantyInfo?.es_valida ? (
-                            <>
-                              <Icon as={CheckIcon} color="white" w={5} h={5} />
-                              <Text fontSize="md">Garantía válida</Text>
-                            </>
+      <>
+        <Head>
+          <title>Consulta de Garantía - iStockUY</title>
+        </Head>
+        <Box
+          // style={{
+          //   background: `url('/fondoabout.png') ${colorMode === "dark" ? "black" : "white"} no-repeat center`,
+          // }}
+          color={textColor}
+          px={8}
+          py={5}
+          h={["auto", "auto", "auto", "100-full"]}
+        >
+          <Box className="mx-auto text-center mt-14">
+              <Heading as="h1" size="xl">
+                  Consulta de Garantía
+              </Heading>
+              <Box>
+                  <Text fontSize="lg" className="mt-10">
+                      Ingrese su número de garantía para consultar el estado de la misma.
+                  </Text>
+              </Box>
+              <Box className="mt-10">
+                <HStack className="justify-center">
+                  <PinInput type='alphanumeric' onChange={(value) => setPinValue(value)}>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <Text fontSize="lg">-</Text>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <Text fontSize="lg">-</Text>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                    <PinInputField textTransform="uppercase"/>
+                  </PinInput>
+                </HStack>
+              </Box>
+              <Box className="mt-10">
+                {loading && <Spinner />}
+                {!loading && pinValue.length === 11 && (
+                  <Box
+                  bg={error ? (colorMode === "dark" ? "#8b0000" : "#8b0000") 
+                  : warrantyInfo?.es_valida ? (colorMode === "dark" ? "#00722a" : "#00722a")
+                  : (colorMode === "dark" ? "#DD6B20" : "#DD6B20")}
+                    boxShadow="md"
+                    borderRadius="lg"
+                    p={4}
+                    width="100%"
+                    maxW="400px"
+                    mx="auto"
+                    textColor="white"
+                  >
+                    <VStack spacing={3} align="start">
+                      {error ? (
+                          <HStack spacing={2}>
+                            <Icon as={CloseIcon} color="white" w={4} h={4} />
+                            <Text fontSize="md">No hay registros para ese número de garantía.</Text>
+                          </HStack>
+                      ) : (
+                        <>
+                          <HStack spacing={2}>
+                            {warrantyInfo?.es_valida ? (
+                              <>
+                                <Icon as={CheckIcon} color="white" w={5} h={5} />
+                                <Text fontSize="md">Garantía válida</Text>
+                              </>
+                            ) : (
+                              <>
+                                <Icon as={WarningTwoIcon} color="white" w={5} h={5} />
+                                <Text fontSize="md">Garantía no válida</Text>
+                              </>
+                            )}
+                          </HStack>
+                          <Divider />
+                          <Text fontSize="md">Fecha de compra: {warrantyInfo?.created_at}</Text>
+                          {warrantyInfo?.productos && warrantyInfo.productos.length > 1 ? (
+                            <Text fontSize="md">Productos: {warrantyInfo.productos.join(', ')}</Text>
                           ) : (
-                            <>
-                              <Icon as={WarningTwoIcon} color="white" w={5} h={5} />
-                              <Text fontSize="md">Garantía no válida</Text>
-                            </>
+                            <Text fontSize="md">Producto: {warrantyInfo?.productos && warrantyInfo.productos[0]}</Text>
                           )}
-                        </HStack>
-                        <Divider />
-                        <Text fontSize="md">Fecha de compra: {warrantyInfo?.created_at}</Text>
-                        {warrantyInfo?.productos && warrantyInfo.productos.length > 1 ? (
-                          <Text fontSize="md">Productos: {warrantyInfo.productos.join(', ')}</Text>
-                        ) : (
-                          <Text fontSize="md">Producto: {warrantyInfo?.productos && warrantyInfo.productos[0]}</Text>
-                        )}
-                        <Text fontSize="md">Garantía válida hasta: {warrantyInfo?.valida_hasta}</Text>
-                      </>
-                    )}
-                  </VStack>
-                </Box>
-              )}
-            </Box>
+                          <Text fontSize="md">Garantía válida hasta: {warrantyInfo?.valida_hasta}</Text>
+                        </>
+                      )}
+                    </VStack>
+                  </Box>
+                )}
+              </Box>
+          </Box>
         </Box>
-      </Box>
+      </>
     );
   }
